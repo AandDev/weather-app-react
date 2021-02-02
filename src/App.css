@@ -1,38 +1,111 @@
 .App {
+  height: 100vh;
+  color: #f9f9f9;
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -9;
+}
+
+.app-card {
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 40px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  padding: 2px 0;
+  background-color: rgba(196, 196, 196, 0.13);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.header {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 7%;
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  opacity: 0.8;
+}
+
+.weather-card {
+  padding: 10px 0;
+}
+
+.weather-icon {
+  margin: 0 auto;
+  padding-top: 5px;
+  width: 38%;
+  animation: float 4s linear infinite;
+}
+
+.weather-icon .icon {
+  width: 100%;
+}
+
+.weather-temperature {
+  margin-top: 5px;
+  font-size: 2.7em;
+}
+
+.weather-description {
+  text-transform: capitalize;
+  margin-top: -10px;
+}
+
+.more-weather-info .info-item {
+  width: 100px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.foot {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(5px);
+  }
+  100% {
+      transform: translateY(-5px);
+  }
+  100% {
+      transform: translateY(0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 415px) {
+  
+  .app-card {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .more-weather-info .info-item {
+    width: 80px;
+    font-size: 14px;
   }
+
 }
