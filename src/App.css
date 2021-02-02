@@ -18,15 +18,15 @@
   width: 80%;
   max-width: 400px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: center;
 }
 
 .box {
   padding: 2px 0;
-  background-color: rgba(196, 196, 196, 0.13);
-  backdrop-filter: blur(7px);
-  -webkit-backdrop-filter: blur(7px);
+  background-color: rgba(170, 170, 170, 0.15);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
 }
 

@@ -1,15 +1,15 @@
-import d01 from './images/day-clear.png';
-import n01 from './images/night-clear.png';
-import d02 from './images/day-cloudy.png';
-import n02 from './images/night-cloudy.png';
-import d09 from './images/day-raining.png';
-import n09 from './images/night-raining.png';
-import d11 from './images/thunderstorm.png';
-import d13 from './images/day-snowy.png';
-import n13 from './images/night-snowy.png';
-import d50 from './images/day-mist.png';
-import n50 from './images/night-mist.png';
-import error from './images/error.png';
+import d01 from './images/day-clear.svg';
+import n01 from './images/night-clear.svg';
+import d02 from './images/day-cloudy.svg';
+import n02 from './images/night-cloudy.svg';
+import d09 from './images/day-raining.svg';
+import n09 from './images/night-raining.svg';
+import d11 from './images/thunderstorm.svg';
+import d13 from './images/day-snowy.svg';
+import n13 from './images/night-snowy.svg';
+import d50 from './images/day-mist.svg';
+import n50 from './images/night-mist.svg';
+import error from './images/error.svg';
 
 const images = {
     "01d": d01,
